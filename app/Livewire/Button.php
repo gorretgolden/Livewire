@@ -6,11 +6,14 @@ use App\Models\User;
 use Livewire\Component;
 
 class Button extends Component
-{
+
+{  
+    public $username = 'golden';
+    
     public function createNewUser(){
         User::create([
             'name'=>'Gorret',
-            'email'=>'gorret@gmail.com',
+            'email'=>'gorret3@gmail.com',
             'password'=>'#golden'
         ]);
         
