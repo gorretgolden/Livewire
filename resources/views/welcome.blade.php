@@ -169,6 +169,7 @@
             </div>
         </div> --}}
 
+        @livewire('form')
         @livewire('button')
     </body>
 </html>
