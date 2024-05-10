@@ -14,6 +14,8 @@ class Form extends Component
 
     public function createNewUser(){
 
+       # sleep(2);
+
         $this->validate([
             'name'=>'required|string|min:5',
             'email'=>'required|email|unique:users',

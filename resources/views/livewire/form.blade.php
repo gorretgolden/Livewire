@@ -36,7 +36,11 @@
 
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div wire:loading.delay.long>
+            <span class="text-success">Sending..</span>
+        </div>
+
+        <button wire:loading.remove type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 </div>
